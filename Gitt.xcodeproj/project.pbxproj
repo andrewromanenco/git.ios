@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		491E1674177CECEB0052C88C /* SourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491E1673177CECEB0052C88C /* SourceViewController.m */; };
+		4963667E178925930065B497 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 499136581777C04600FDAEC6 /* libcrypto.a */; };
+		496366801789266E0065B497 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4963667F1789266E0065B497 /* libssl.a */; };
+		49913617177776C100FDAEC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49913616177776C100FDAEC6 /* UIKit.framework */; };
+		49913619177776C100FDAEC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49913618177776C100FDAEC6 /* Foundation.framework */; };
+		4991361B177776C100FDAEC6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4991361A177776C100FDAEC6 /* CoreGraphics.framework */; };
+		49913621177776C100FDAEC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4991361F177776C100FDAEC6 /* InfoPlist.strings */; };
+		49913623177776C100FDAEC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49913622177776C100FDAEC6 /* main.m */; };
+		49913627177776C100FDAEC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49913626177776C100FDAEC6 /* AppDelegate.m */; };
+		49913630177776C100FDAEC6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4991362E177776C100FDAEC6 /* MainStoryboard_iPhone.storyboard */; };
+		49913633177776C100FDAEC6 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49913631177776C100FDAEC6 /* MainStoryboard_iPad.storyboard */; };
+		499136501777885E00FDAEC6 /* libObjectiveGit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4991364B1777778B00FDAEC6 /* libObjectiveGit-iOS.a */; };
+		4991365217778A5A00FDAEC6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4991365117778A5A00FDAEC6 /* libz.dylib */; };
+		49E3B125177B4D0500C8BA6D /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3B124177B4D0500C8BA6D /* MainController.m */; };
+		49E3B128177B4DA700C8BA6D /* LocalReposController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3B127177B4DA700C8BA6D /* LocalReposController.m */; };
+		49E3B131177B4EBB00C8BA6D /* CloneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3B130177B4EBB00C8BA6D /* CloneViewController.m */; };
+		49E3B166177B52D200C8BA6D /* GitActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3B165177B52D100C8BA6D /* GitActionController.m */; };
+		49E3B168177B9FD200C8BA6D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E3B167177B9FD200C8BA6D /* libsqlite3.dylib */; };
+		49E3B16B177BA08600C8BA6D /* LocalDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3B16A177BA08600C8BA6D /* LocalDAO.m */; };
+		49E3B172177CE05500C8BA6D /* BrowseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3B171177CE05500C8BA6D /* BrowseController.m */; };
+		49F4795517839BA1000A8AEC /* syntaxhighlighter in Resources */ = {isa = PBXBuildFile; fileRef = 49F4795417839BA1000A8AEC /* syntaxhighlighter */; };
+		49F4795C17839C4C000A8AEC /* SyntaxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F4795B17839C4C000A8AEC /* SyntaxHelper.m */; };
+		49F4796017839D3A000A8AEC /* sourceview.html in Resources */ = {isa = PBXBuildFile; fileRef = 49F4795F17839D3A000A8AEC /* sourceview.html */; };
+		49F4796317849173000A8AEC /* CheckoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F4796217849173000A8AEC /* CheckoutController.m */; };
+		49F479711787CFB5000A8AEC /* google-code-prettify in Resources */ = {isa = PBXBuildFile; fileRef = 49F479701787CFB5000A8AEC /* google-code-prettify */; };
+		49F479741787D2DC000A8AEC /* PrettifyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F479731787D2DC000A8AEC /* PrettifyHelper.m */; };
+		49F479761787D3D6000A8AEC /* prettify.html in Resources */ = {isa = PBXBuildFile; fileRef = 49F479751787D3D6000A8AEC /* prettify.html */; };
+		49F479781788C041000A8AEC /* app-icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F479771788C041000A8AEC /* app-icon-57.png */; };
+		49F4797A1788C0B3000A8AEC /* app-icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F479791788C0B3000A8AEC /* app-icon-114.png */; };
+		49F479821788C235000A8AEC /* app-icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F479811788C235000A8AEC /* app-icon-72.png */; };
+		49F479841788C26A000A8AEC /* app-icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F479831788C26A000A8AEC /* app-icon-144.png */; };
+		49F479861788C2D1000A8AEC /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F479851788C2D1000A8AEC /* Default-Portrait~ipad.png */; };
+		49F479881788C31F000A8AEC /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F479871788C31F000A8AEC /* Default-Landscape~ipad.png */; };
+		49F4798A1788C431000A8AEC /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F479891788C431000A8AEC /* Default-Portrait@2x~ipad.png */; };
+		49F4798C1788C43B000A8AEC /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F4798B1788C43B000A8AEC /* Default-Landscape@2x~ipad.png */; };
+		49F4798F1788C5B1000A8AEC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F4797F1788C1DE000A8AEC /* Default.png */; };
+		49F479A01788DA7E000A8AEC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F4799A1788CD0A000A8AEC /* Default@2x.png */; };
+		49F479A11788DA86000A8AEC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F4799E1788CD91000A8AEC /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		499136461777778B00FDAEC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4991363C1777778B00FDAEC6 /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = ObjectiveGit;
+		};
+		499136481777778B00FDAEC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4991363C1777778B00FDAEC6 /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88F05A6B16011E5400B7AD1D;
+			remoteInfo = ObjectiveGitTests;
+		};
+		4991364A1777778B00FDAEC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4991363C1777778B00FDAEC6 /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04DB4645133AB57600D9C624;
+			remoteInfo = "ObjectiveGit-iOS";
+		};
+		4991364C177777A000FDAEC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4991363C1777778B00FDAEC6 /* ObjectiveGitFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 04DB4644133AB57600D9C624;
+			remoteInfo = "ObjectiveGit-iOS";
+		};
+		499136571777C04600FDAEC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 499136531777C04600FDAEC6 /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9069D28C0FCE659A0042E34C;
+			remoteInfo = crypto;
+		};
+		499136591777C07A00FDAEC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 499136531777C04600FDAEC6 /* openssl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9069D28B0FCE659A0042E34C;
+			remoteInfo = crypto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		491E1672177CECEB0052C88C /* SourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceViewController.h; sourceTree = "<group>"; };
+		491E1673177CECEB0052C88C /* SourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceViewController.m; sourceTree = "<group>"; };
+		49636679178920870065B497 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4963667F1789266E0065B497 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../../../Temp/Gitt.4build/libssl.a; sourceTree = "<group>"; };
+		49913613177776C100FDAEC6 /* Git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Git.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49913616177776C100FDAEC6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		49913618177776C100FDAEC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4991361A177776C100FDAEC6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4991361E177776C100FDAEC6 /* Gitt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gitt-Info.plist"; sourceTree = "<group>"; };
+		49913620177776C100FDAEC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49913622177776C100FDAEC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49913624177776C100FDAEC6 /* Gitt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gitt-Prefix.pch"; sourceTree = "<group>"; };
+		49913625177776C100FDAEC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		49913626177776C100FDAEC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4991362F177776C100FDAEC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		49913632177776C100FDAEC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		4991363C1777778B00FDAEC6 /* ObjectiveGitFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveGitFramework.xcodeproj; path = "../objective-git/ObjectiveGitFramework.xcodeproj"; sourceTree = "<group>"; };
+		4991365117778A5A00FDAEC6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		499136531777C04600FDAEC6 /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = "../openssl-xcode/openssl.xcodeproj"; sourceTree = "<group>"; };
+		49E3B123177B4D0500C8BA6D /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		49E3B124177B4D0500C8BA6D /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		49E3B126177B4DA700C8BA6D /* LocalReposController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalReposController.h; sourceTree = "<group>"; };
+		49E3B127177B4DA700C8BA6D /* LocalReposController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalReposController.m; sourceTree = "<group>"; };
+		49E3B12F177B4EBB00C8BA6D /* CloneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloneViewController.h; sourceTree = "<group>"; };
+		49E3B130177B4EBB00C8BA6D /* CloneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloneViewController.m; sourceTree = "<group>"; };
+		49E3B164177B52D100C8BA6D /* GitActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitActionController.h; sourceTree = "<group>"; };
+		49E3B165177B52D100C8BA6D /* GitActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitActionController.m; sourceTree = "<group>"; };
+		49E3B167177B9FD200C8BA6D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		49E3B169177BA08600C8BA6D /* LocalDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDAO.h; sourceTree = "<group>"; };
+		49E3B16A177BA08600C8BA6D /* LocalDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalDAO.m; sourceTree = "<group>"; };
+		49E3B170177CE05500C8BA6D /* BrowseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseController.h; sourceTree = "<group>"; };
+		49E3B171177CE05500C8BA6D /* BrowseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseController.m; sourceTree = "<group>"; };
+		49F4795417839BA1000A8AEC /* syntaxhighlighter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = syntaxhighlighter; sourceTree = "<group>"; };
+		49F4795A17839C4C000A8AEC /* SyntaxHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxHelper.h; sourceTree = "<group>"; };
+		49F4795B17839C4C000A8AEC /* SyntaxHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxHelper.m; sourceTree = "<group>"; };
+		49F4795F17839D3A000A8AEC /* sourceview.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sourceview.html; sourceTree = "<group>"; };
+		49F4796117849173000A8AEC /* CheckoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutController.h; sourceTree = "<group>"; };
+		49F4796217849173000A8AEC /* CheckoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutController.m; sourceTree = "<group>"; };
+		49F479701787CFB5000A8AEC /* google-code-prettify */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "google-code-prettify"; sourceTree = "<group>"; };
+		49F479721787D2DC000A8AEC /* PrettifyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettifyHelper.h; sourceTree = "<group>"; };
+		49F479731787D2DC000A8AEC /* PrettifyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettifyHelper.m; sourceTree = "<group>"; };
+		49F479751787D3D6000A8AEC /* prettify.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = prettify.html; sourceTree = "<group>"; };
+		49F479771788C041000A8AEC /* app-icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-57.png"; sourceTree = "<group>"; };
+		49F479791788C0B3000A8AEC /* app-icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-114.png"; sourceTree = "<group>"; };
+		49F4797F1788C1DE000A8AEC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		49F479811788C235000A8AEC /* app-icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-72.png"; sourceTree = "<group>"; };
+		49F479831788C26A000A8AEC /* app-icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-144.png"; sourceTree = "<group>"; };
+		49F479851788C2D1000A8AEC /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		49F479871788C31F000A8AEC /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		49F479891788C431000A8AEC /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		49F4798B1788C43B000A8AEC /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		49F4799A1788CD0A000A8AEC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		49F4799E1788CD91000A8AEC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49913610177776C100FDAEC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496366801789266E0065B497 /* libssl.a in Frameworks */,
+				4963667E178925930065B497 /* libcrypto.a in Frameworks */,
+				49E3B168177B9FD200C8BA6D /* libsqlite3.dylib in Frameworks */,
+				4991365217778A5A00FDAEC6 /* libz.dylib in Frameworks */,
+				499136501777885E00FDAEC6 /* libObjectiveGit-iOS.a in Frameworks */,
+				49913617177776C100FDAEC6 /* UIKit.framework in Frameworks */,
+				49913619177776C100FDAEC6 /* Foundation.framework in Frameworks */,
+				4991361B177776C100FDAEC6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4991360A177776C100FDAEC6 = {
+			isa = PBXGroup;
+			children = (
+				4963667F1789266E0065B497 /* libssl.a */,
+				49636679178920870065B497 /* Security.framework */,
+				49F4799E1788CD91000A8AEC /* Default-568h@2x.png */,
+				49F4799A1788CD0A000A8AEC /* Default@2x.png */,
+				49F4798B1788C43B000A8AEC /* Default-Landscape@2x~ipad.png */,
+				49F479891788C431000A8AEC /* Default-Portrait@2x~ipad.png */,
+				49F479871788C31F000A8AEC /* Default-Landscape~ipad.png */,
+				49F479851788C2D1000A8AEC /* Default-Portrait~ipad.png */,
+				49F479831788C26A000A8AEC /* app-icon-144.png */,
+				49F479811788C235000A8AEC /* app-icon-72.png */,
+				49F4797F1788C1DE000A8AEC /* Default.png */,
+				49F479791788C0B3000A8AEC /* app-icon-114.png */,
+				49F479771788C041000A8AEC /* app-icon-57.png */,
+				49F479751787D3D6000A8AEC /* prettify.html */,
+				49F479701787CFB5000A8AEC /* google-code-prettify */,
+				49F4795F17839D3A000A8AEC /* sourceview.html */,
+				49F4795417839BA1000A8AEC /* syntaxhighlighter */,
+				49E3B167177B9FD200C8BA6D /* libsqlite3.dylib */,
+				499136531777C04600FDAEC6 /* openssl.xcodeproj */,
+				4991365117778A5A00FDAEC6 /* libz.dylib */,
+				4991363C1777778B00FDAEC6 /* ObjectiveGitFramework.xcodeproj */,
+				4991361C177776C100FDAEC6 /* Gitt */,
+				49913615177776C100FDAEC6 /* Frameworks */,
+				49913614177776C100FDAEC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49913614177776C100FDAEC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49913613177776C100FDAEC6 /* Git.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49913615177776C100FDAEC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49913616177776C100FDAEC6 /* UIKit.framework */,
+				49913618177776C100FDAEC6 /* Foundation.framework */,
+				4991361A177776C100FDAEC6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4991361C177776C100FDAEC6 /* Gitt */ = {
+			isa = PBXGroup;
+			children = (
+				49913625177776C100FDAEC6 /* AppDelegate.h */,
+				49E3B123177B4D0500C8BA6D /* MainController.h */,
+				49E3B124177B4D0500C8BA6D /* MainController.m */,
+				49913626177776C100FDAEC6 /* AppDelegate.m */,
+				4991362E177776C100FDAEC6 /* MainStoryboard_iPhone.storyboard */,
+				49913631177776C100FDAEC6 /* MainStoryboard_iPad.storyboard */,
+				4991361D177776C100FDAEC6 /* Supporting Files */,
+				49E3B126177B4DA700C8BA6D /* LocalReposController.h */,
+				49E3B127177B4DA700C8BA6D /* LocalReposController.m */,
+				49E3B12F177B4EBB00C8BA6D /* CloneViewController.h */,
+				49E3B130177B4EBB00C8BA6D /* CloneViewController.m */,
+				49E3B164177B52D100C8BA6D /* GitActionController.h */,
+				49E3B165177B52D100C8BA6D /* GitActionController.m */,
+				49E3B169177BA08600C8BA6D /* LocalDAO.h */,
+				49E3B16A177BA08600C8BA6D /* LocalDAO.m */,
+				49E3B170177CE05500C8BA6D /* BrowseController.h */,
+				49E3B171177CE05500C8BA6D /* BrowseController.m */,
+				491E1672177CECEB0052C88C /* SourceViewController.h */,
+				491E1673177CECEB0052C88C /* SourceViewController.m */,
+				49F4795A17839C4C000A8AEC /* SyntaxHelper.h */,
+				49F4795B17839C4C000A8AEC /* SyntaxHelper.m */,
+				49F4796117849173000A8AEC /* CheckoutController.h */,
+				49F4796217849173000A8AEC /* CheckoutController.m */,
+				49F479721787D2DC000A8AEC /* PrettifyHelper.h */,
+				49F479731787D2DC000A8AEC /* PrettifyHelper.m */,
+			);
+			path = Gitt;
+			sourceTree = "<group>";
+		};
+		4991361D177776C100FDAEC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4991361E177776C100FDAEC6 /* Gitt-Info.plist */,
+				4991361F177776C100FDAEC6 /* InfoPlist.strings */,
+				49913622177776C100FDAEC6 /* main.m */,
+				49913624177776C100FDAEC6 /* Gitt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4991363D1777778B00FDAEC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				499136471777778B00FDAEC6 /* ObjectiveGit.framework */,
+				499136491777778B00FDAEC6 /* ObjectiveGitTests.octest */,
+				4991364B1777778B00FDAEC6 /* libObjectiveGit-iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		499136541777C04600FDAEC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				499136581777C04600FDAEC6 /* libcrypto.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49913612177776C100FDAEC6 /* Gitt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49913639177776C100FDAEC6 /* Build configuration list for PBXNativeTarget "Gitt" */;
+			buildPhases = (
+				4991360F177776C100FDAEC6 /* Sources */,
+				49913610177776C100FDAEC6 /* Frameworks */,
+				49913611177776C100FDAEC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4991365A1777C07A00FDAEC6 /* PBXTargetDependency */,
+				4991364D177777A000FDAEC6 /* PBXTargetDependency */,
+			);
+			name = Gitt;
+			productName = Gitt;
+			productReference = 49913613177776C100FDAEC6 /* Git.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4991360B177776C100FDAEC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Andrew Romanenco";
+			};
+			buildConfigurationList = 4991360E177776C100FDAEC6 /* Build configuration list for PBXProject "Gitt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4991360A177776C100FDAEC6;
+			productRefGroup = 49913614177776C100FDAEC6 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4991363D1777778B00FDAEC6 /* Products */;
+					ProjectRef = 4991363C1777778B00FDAEC6 /* ObjectiveGitFramework.xcodeproj */;
+				},
+				{
+					ProductGroup = 499136541777C04600FDAEC6 /* Products */;
+					ProjectRef = 499136531777C04600FDAEC6 /* openssl.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				49913612177776C100FDAEC6 /* Gitt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		499136471777778B00FDAEC6 /* ObjectiveGit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectiveGit.framework;
+			remoteRef = 499136461777778B00FDAEC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		499136491777778B00FDAEC6 /* ObjectiveGitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ObjectiveGitTests.octest;
+			remoteRef = 499136481777778B00FDAEC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4991364B1777778B00FDAEC6 /* libObjectiveGit-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libObjectiveGit-iOS.a";
+			remoteRef = 4991364A1777778B00FDAEC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		499136581777C04600FDAEC6 /* libcrypto.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcrypto.a;
+			remoteRef = 499136571777C04600FDAEC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49913611177776C100FDAEC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49913621177776C100FDAEC6 /* InfoPlist.strings in Resources */,
+				49913630177776C100FDAEC6 /* MainStoryboard_iPhone.storyboard in Resources */,
+				49913633177776C100FDAEC6 /* MainStoryboard_iPad.storyboard in Resources */,
+				49F4795517839BA1000A8AEC /* syntaxhighlighter in Resources */,
+				49F4796017839D3A000A8AEC /* sourceview.html in Resources */,
+				49F479711787CFB5000A8AEC /* google-code-prettify in Resources */,
+				49F479761787D3D6000A8AEC /* prettify.html in Resources */,
+				49F479781788C041000A8AEC /* app-icon-57.png in Resources */,
+				49F4797A1788C0B3000A8AEC /* app-icon-114.png in Resources */,
+				49F479821788C235000A8AEC /* app-icon-72.png in Resources */,
+				49F479841788C26A000A8AEC /* app-icon-144.png in Resources */,
+				49F479861788C2D1000A8AEC /* Default-Portrait~ipad.png in Resources */,
+				49F479881788C31F000A8AEC /* Default-Landscape~ipad.png in Resources */,
+				49F4798A1788C431000A8AEC /* Default-Portrait@2x~ipad.png in Resources */,
+				49F4798C1788C43B000A8AEC /* Default-Landscape@2x~ipad.png in Resources */,
+				49F4798F1788C5B1000A8AEC /* Default.png in Resources */,
+				49F479A01788DA7E000A8AEC /* Default@2x.png in Resources */,
+				49F479A11788DA86000A8AEC /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4991360F177776C100FDAEC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49913623177776C100FDAEC6 /* main.m in Sources */,
+				49913627177776C100FDAEC6 /* AppDelegate.m in Sources */,
+				49E3B125177B4D0500C8BA6D /* MainController.m in Sources */,
+				49E3B128177B4DA700C8BA6D /* LocalReposController.m in Sources */,
+				49E3B131177B4EBB00C8BA6D /* CloneViewController.m in Sources */,
+				49E3B166177B52D200C8BA6D /* GitActionController.m in Sources */,
+				49E3B16B177BA08600C8BA6D /* LocalDAO.m in Sources */,
+				49E3B172177CE05500C8BA6D /* BrowseController.m in Sources */,
+				491E1674177CECEB0052C88C /* SourceViewController.m in Sources */,
+				49F4795C17839C4C000A8AEC /* SyntaxHelper.m in Sources */,
+				49F4796317849173000A8AEC /* CheckoutController.m in Sources */,
+				49F479741787D2DC000A8AEC /* PrettifyHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4991364D177777A000FDAEC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjectiveGit-iOS";
+			targetProxy = 4991364C177777A000FDAEC6 /* PBXContainerItemProxy */;
+		};
+		4991365A1777C07A00FDAEC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = crypto;
+			targetProxy = 499136591777C07A00FDAEC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4991361F177776C100FDAEC6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49913620177776C100FDAEC6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4991362E177776C100FDAEC6 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4991362F177776C100FDAEC6 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		49913631177776C100FDAEC6 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49913632177776C100FDAEC6 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49913637177776C100FDAEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Romanenco";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "C5E282D9-BCA9-4A6D-A87F-3E49DC10F2F8";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49913638177776C100FDAEC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Romanenco";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "C5E282D9-BCA9-4A6D-A87F-3E49DC10F2F8";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4991363A177776C100FDAEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gitt/Gitt-Prefix.pch";
+				INFOPLIST_FILE = "Gitt/Gitt-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Temp\"",
+					"\"$(SRCROOT)/../../../Temp/Gitt.4build\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = Git;
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/usr/local/include $(SRCROOT)/../objective-git/libgit2/include $(SRCROOT)/../openssl-xcode/openssl/include /Users/andrew/Temp/Gitt.4build";
+				VALID_ARCHS = "armv7 armv7s i386";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4991363B177776C100FDAEC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Andrew Romanenco";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrew Romanenco";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gitt/Gitt-Prefix.pch";
+				INFOPLIST_FILE = "Gitt/Gitt-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Temp\"",
+					"\"$(SRCROOT)/../../../Temp/Gitt.4build\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = Git;
+				PROVISIONING_PROFILE = "48BF93A1-E44F-4DF3-A0C7-7AAD2D75E7F5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "48BF93A1-E44F-4DF3-A0C7-7AAD2D75E7F5";
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/usr/local/include $(SRCROOT)/../objective-git/libgit2/include $(SRCROOT)/../openssl-xcode/openssl/include /Users/andrew/Temp/Gitt.4build";
+				VALID_ARCHS = "armv7 armv7s i386";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4991360E177776C100FDAEC6 /* Build configuration list for PBXProject "Gitt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49913637177776C100FDAEC6 /* Debug */,
+				49913638177776C100FDAEC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49913639177776C100FDAEC6 /* Build configuration list for PBXNativeTarget "Gitt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4991363A177776C100FDAEC6 /* Debug */,
+				4991363B177776C100FDAEC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4991360B177776C100FDAEC6 /* Project object */;
+}

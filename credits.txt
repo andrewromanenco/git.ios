@@ -1,0 +1,10 @@
+This application is based on libgit2 with objective-git framework.
+
+https://github.com/libgit2/libgit2
+https://github.com/libgit2/objective-git
+
+Code highlighting with google-code-prettify.
+
+http://google-code-prettify.googlecode.com
+
+Logo is created by Jason Long.
