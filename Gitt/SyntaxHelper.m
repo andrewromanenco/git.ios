@@ -34,7 +34,7 @@ static NSArray *mapping;
                    @"Bash,bash,sh",
                    @"CSharp,cs",
                    @"ColdFusion",
-                   @"Cpp,m,h,cpp,c",
+                   @"Cpp,m,h,cpp,c,hpp,cc",
                    @"Css,css",
                    @"Delphi,pas",
                    @"Diff,diff",
